@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+
+      body{
+
+         background-image:url(https://www.wallpapertip.com/wmimgs/231-2314219_resolution-light-sky-blue-solid-color-background-view.jpg);
+
+         background-position:center;
+         background-size:cover;
+         font-family:sans-serif;
+         color: white;
+         font-size:15px;
+         }
+
+         .main{
+           background-color:rgb(0,0,0,0.2);
+           width:1000px;
+          padding:60px;
+         margin-top: 40px;
+         margin-left:60px;
+         margin-bottom:50px;
+
+               }
+
+        .buttons{
+
+          background-color:#4e89ae;
+          display:block;
+          margin:20px 0px 0px 20px;
+          text-align:center;
+          border-radius:20px;
+          border:2px solid #41444b;
+          padding:10px 50px;
+          outline:none;
+          color:white;
+          cursor:pointer;
+          transition:0.25px;
+
+        }
+        .buttons:hover{
+                     background-color:#5390F5;
+
+
+    </style>
+    <title></title>
+	<script>
+		function goToPage(btn)
+		{
+				if(btn=='approve')
+				{
+					window.alert('Project approved succesfully');
+				}
+				else if(btn=='reject')
+				{
+					window.alert('Project rejected succesfully');
+				}
+		}
+	</script>
+  </head>
+  <body>
+    <div class="main">
+
+
+
+		<h3>Project Title:</h3><p> Student Project Management System</p>
+		<h3>Project Description</h3>
+		<p>This project is aimed at developing a web-
+		based system, which manages the activity of “Student Project
+		Management”. This system will manage the database and maintain a list of
+		all student groups that have registered for their projects, and keep track of their progress</p>
+		<table>
+			  <tr>
+				<th>Name</th>
+				<th>Roll Number</th>
+				<th>Email ID</th>
+			  </tr>
+			  <tr>
+				<td >Team Member1</td>
+				<td>001</td>
+				<td>abc1@gmail.com</td>
+			  </tr>
+			  <tr>
+				<td >Team Member2</td>
+				<td>002</td>
+				<td>abc2@gmail.com</td>
+
+			  </tr>
+			  <tr>
+				<td >Team Member3</td>
+				<td>003</td>
+				<td>abc3@gmail.com</td>
+			  </tr>
+
+		</table>
+
+		<center>
+			<button class="buttons" onclick="goToPage('approve')" name="approve" >Approve</button>
+			<button class="buttons" onclick="goToPage('reject')" name="reject" >Reject</button>
+		</center>
+	</div>
+  </body>
+</html>

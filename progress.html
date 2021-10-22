@@ -1,0 +1,170 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="pstyle.css">
+        <title>Steps</title>
+    </head>
+    <body>
+      <div class="main">
+
+
+
+        <h1 ><b>1.</b>Requirement Analysis</h1>
+    <form action="">
+          <label for=""></label>  <input type="text" id="" size="1" name="">
+        </form>
+
+        <div  id="progressBar">
+        <div id="progressBarFull">
+        </div></div>
+        <br/>
+        <h1 ><b>2.</b>Design</h1>
+
+        <form action="">
+          <label for=""></label>  <input type="text" id="" size="1" name="">
+        </form>
+
+        <div  id="progressBar2">
+        <div id="progressBarFull2">
+        </div></div>
+        <br/>
+        <h1 ><b>3.</b>Implementation & Coding</h1>
+        <form action="">
+            <label for=""></label>  <input type="text" id="" size="1" name="">
+        </form>
+        <div  id="progressBar3">
+        <div id="progressBarFull3">
+        </div></div>
+        <br/>
+        <h1 ><b>4.</b>Testing</h1>
+        <form action="">
+            <label for=""></label>  <input type="text" id="" size="1" name="">
+        </form>
+        <div  id="progressBar4">
+        <div id="progressBarFull4">
+        </div></div>
+        <br/>
+        <h1 ><b>5.</b>Maintainence</h1>
+        <form action="">
+            <label for=""></label>  <input type="text" id="" size="1" name="">
+        </form>
+        <div  id="progressBar5">
+        <div id="progressBarFull5">
+        </div></div>
+        <button class="button"type="submit">Update</button>
+
+        </div>
+    </body>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #progressBar
+        {
+            width: 40rem;
+            height: 3rem;
+            border: solid black;
+            margin-top: 0rem;
+            background-color: #fff;
+            border-radius:20px;
+        }
+        #progressBarFull
+        {
+            height: 2.7rem;
+            background-color:burlywood;
+            width: 0%;
+            border-radius:20px;
+            margin-top:0rem;
+        }
+        #progressBar2
+        {
+            width: 40rem;
+            height: 3rem;
+            border:  solid black;
+            margin-top: 0rem;
+            background-color: #fff;
+            border-radius:20px;
+        }
+        #progressBarFull2
+        {
+            height: 2.7rem;
+            background-color:greenyellow;
+            width: 0%;
+            border-radius:20px;
+
+        }
+        #progressBar3
+        {
+          width: 40rem;
+          height: 3rem;
+          border:  solid black;
+          margin-top: 0rem;
+          background-color: #fff;
+          border-radius:20px;
+        }
+        #progressBarFull3
+        {
+          height: 2.7rem;
+          background-color:pink;
+          width: 0%;
+          border-radius:20px;
+        }
+        #progressBar4
+        {
+          width: 40rem;
+          height: 3rem;
+          border:  solid black;
+          margin-top: 0rem;
+          background-color: #fff;
+          border-radius:20px;
+        }
+        #progressBarFull4
+        {
+          height: 2.7rem;
+          background-color:navajowhite;
+          width: 0%;
+          border-radius:20px;
+        }
+        #progressBar5
+        {
+
+            width: 40rem;
+            height: 3rem;
+            border:  solid black;
+            margin-top: 0rem;
+            background-color: #fff;
+            border-radius:20px;
+          }
+        }
+        #progressBarFull5
+        {
+          height: 2.7rem;
+          background-color:pink;
+          width: 0%;
+          border-radius:20px;
+        }
+    </style>
+    <script type="text/javascript">
+        const progressBarFull = document.getElementById('progressBarFull');
+        let questionCounter = 100;
+        const MAX_QUESTIONS = 100;
+        progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        const progressBarFull2 = document.getElementById('progressBarFull2');
+        let questionCounter2 = 80;
+        const MAX_QUESTIONS2 = 100;
+        progressBarFull2.style.width = `${(questionCounter2 / MAX_QUESTIONS) * 100}%`;
+        const progressBarFull3 = document.getElementById('progressBarFull3');
+        let questionCounter3 = 40;
+        const MAX_QUESTIONS3 = 100;
+        progressBarFull3.style.width = `${(questionCounter3 / MAX_QUESTIONS) * 100}%`;
+        const progressBarFull4 = document.getElementById('progressBarFull4');
+        let questionCounter4 = 20;
+        const MAX_QUESTIONS4 = 100;
+        progressBarFull4.style.width = `${(questionCounter4 / MAX_QUESTIONS) * 100}%`;
+        const progressBarFull5 = document.getElementById('progressBarFull5');
+        let questionCounter5 = 0;
+        const MAX_QUESTIONS5 = 100;
+        progressBarFull5.style.width = `${(questionCounter5 / MAX_QUESTIONS) * 100}%`;
+    </script>
+</html>

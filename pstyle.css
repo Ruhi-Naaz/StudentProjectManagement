@@ -1,0 +1,57 @@
+*{
+  margin:left;;
+  padding left: 100px
+  }
+
+ body{
+    background-image:url(https://www.wallpapertip.com/wmimgs/231-2314219_resolution-light-sky-blue-solid-color-background-view.jpg);
+    margin-top:40px;
+    padding-left: 100px;
+    background-position:center;
+    background-size:cover;
+    font-family:sans-serif;
+    font-size: 10px;
+    color: white;
+    padding-bottom:40px;
+    }
+
+
+  .main{
+
+    background-color:rgb(0,0,0,0.2);
+    width:800px;
+    margin:auto;
+  margin-top: 50px;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 150px;
+        }
+
+  form{
+      padding:10px;
+      }
+
+  #name{
+       width:100%;
+       height:100px;
+       }
+       .button{
+           background-color:#4e89ae;
+           display:block;
+           margin:50px 0px 0px 20px;
+           text-align:center;
+           border-radius:20px;
+           border:2px solid #41444b;
+           padding:10px 50px;
+           outline:none;
+           color:white;
+           cursor:pointer;
+           transition:0.25px;
+
+            }
+
+            .button:hover{
+                         background-color:#5390F5;
+               }

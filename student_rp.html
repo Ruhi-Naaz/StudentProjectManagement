@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<style media="screen">
+
+		  body{
+
+			 background-image:url(https://www.wallpapertip.com/wmimgs/231-2314219_resolution-light-sky-blue-solid-color-background-view.jpg);
+			 margin-top:150px;
+			 background-position:center;
+			 background-size:cover;
+			 font-family:sans-serif;
+			 color: white;
+			 font-size:15px;
+			 }
+
+
+
+			.buttons{
+
+			  background-color:#4e89ae;
+			  display:block;
+			  margin:20px 0px 0px 20px;
+			  text-align:center;
+			  border-radius:20px;
+			  border:2px solid #41444b;
+			  padding:10px 50px;
+			  outline:none;
+			  color:white;
+			  cursor:pointer;
+			  transition:0.25px;
+
+			}
+			.buttons:hover{
+						 background-color:#5390F5;
+
+
+		</style>
+
+		<meta charset="utf-8">
+
+		<title>Welcome</title>
+		<script>
+			function goToPage(bttnClicked)
+			{
+				if(bttnClicked=='Register')
+				{
+					window.location="\p_form.html";
+				}
+				else if(bttnClicked=='Progress')
+				{
+					window.location="\progress.html";
+				}
+			}
+		</script>
+	</head>
+    <body>
+		<div class="main" >
+			<center>
+		   <!--  <form action="p_form.html" method="post"> -->
+		   <!--  <input class="buttons" type="submit" value = "Register Team"> -->
+				<button class="buttons" onclick="goToPage('Register')">Register Team</button>
+				<span>
+					<button  class="buttons" onclick="goToPage('Progress')">Update Progress</button>
+				</span>
+				 <!--  <input class="buttons" type="button" value = "Update Progress"></span> -->
+				 
+			</center>
+		</div>
+	</body>
+</html>

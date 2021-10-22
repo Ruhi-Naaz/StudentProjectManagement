@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="rform.css">
+    <title>Project Details</title>
+	<script>
+		function goToPage()
+		{
+					window.location= "\student_submit.html";
+		}
+	</script>
+</head>
+
+<body>
+    <div class="form">
+        <h1>
+          	<img src="./logo.jpg" alt="clg logo" style="width:50px;height:50px;" align="left">
+             Project Details
+ 			      <img src="./logo.jpg" alt="clg logo" style="width:50px;height:50px;" align="right">
+       </h1>
+    </div>
+
+<div class="main">
+  <!-- <form method="POST"> -->
+	<br>
+    <div id="name">
+      <h2 class="name">Project Name: </h2>
+      <input class="pname" type="text" name="pname"><br>
+    </div>
+
+    <h2 class="name">Project Details: </h2>
+    <textarea class="pdetails" rows="3" cols="30" name="details" id="details"></textarea>
+
+    <h2 class="name">Teammate #1</h2>
+            <input class="Code" type="text" name="name">
+            <label class="names">Name</label>
+            <input class="number" type="text" name="rno">
+            <label class="roll-number">Roll Number</label>
+            <input class="email1" type="text" name="email">
+            <label class="email">Email ID</label>
+
+    <h2 class="name">  Teammate #2</h2>
+            <input class="Code" type="text" name="name">
+            <label class="names">Name</label>
+            <input class="number" type="text" name="rno">
+            <label class="roll-number">Roll Number</label>
+            <input class="email1" type="text" name="email">
+            <label class="email">Email ID</label>
+
+    <h2 class="name">Teammate #3</h2>
+            <input class="Code" type="text" name="name">
+            <label class="names">Name</label>
+            <input class="number" type="text" name="rno">
+            <label class="roll-number">Roll Number</label>
+            <input class="email1" type="text" name="email">
+            <label class="email">Email ID</label>
+
+		<button onclick="goToPage()"name="submit" >Submit</button>
+      
+	 <!--  </form> -->
+    </div>
+  </body>
+</html>

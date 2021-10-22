@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  }
+
+ body{
+    background-image:url(https://www.wallpapertip.com/wmimgs/231-2314219_resolution-light-sky-blue-solid-color-background-view.jpg);
+    margin-top:40px;
+    background-position:center;
+    background-size:cover;
+    font-family:sans-serif;
+    }
+
+   .form{
+          width:1180px;
+          background-color:#4e89ae;
+          margin:auto;
+          color:#FFFFFF;
+          padding:20px 10px 20px 10px;
+          text-align:center;
+          border-radius:15px 15px 0px 0px ;
+        }
+
+  .main{
+      background-color:rgb(0,0,0,0.2);
+      width:1200px;
+      margin:auto;
+      }
+
+  form{
+      padding:10px;
+     }
+
+  #name{
+       width:100%;
+       height:100px;
+      }
+
+  .name{
+         margin-left:50px;
+         margin-top:30px;
+         width: 120px;
+         color: white;
+         font-size: 18px;
+         font-weight: 700;
+        }
+
+.pname{
+       position: relative;
+       left:200px;
+       top:-37px;
+       line-height: 40px;
+       border-radius: 6px;
+       padding: 0 22px;
+       font-size: 16px;
+       width: 300px;
+      }
+
+.pdetails{
+          position:relative;
+          left:200px;
+          top:-37px;
+          line-height: 40px;
+          width:480px;
+          border-radius: 6px;
+          padding: 0 22px;
+          font-size: 16px;
+          color: #555;
+        }
+
+
+   .Code{
+         position:relative;
+         left:200px;
+          top:-37px;
+          line-height: 40px;
+          width:200px;
+          border-radius: 6px;
+          padding: 0 10px;
+          font-size: 16px;
+          color: #555;
+  }
+
+ .number{
+         position:relative;
+         left:200px;
+         top:-37px;
+         line-height: 40px;
+         width:255px;
+        border-radius: 6px;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #555;
+     }
+
+  .email1{
+        position:relative;
+        left:160px;
+        top:-37px;
+        line-height: 40px;
+        width:255px;
+        border-radius: 6px;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #555;
+       }
+
+ .names{
+        position:relative;
+        color:#E5E5E5;
+        text-transform:capitalize;
+        font-size:16px;
+        left:-10px;
+        top:-4px;
+     }
+
+ .roll-number{
+              position:relative;
+              color:#E5E5E5;
+              text-transform:capitalize;
+              font-size:16px;
+              left:-50px;
+              top:-2px;
+              }
+
+     .email{
+            position:relative;
+            color:#E5E5E5;
+            text-transform:capitalize;
+            font-size:16px;
+            left:-100px;
+            top:-2px;
+           }
+
+    button{
+          background-color:#4e89ae;
+          display:block;
+          margin:40px 20px 20px 20px;
+          margin-left: 400px;
+          text-align: left;
+          border-radius:20px;
+          border:2px solid #366473;
+          padding:14px 110px;
+          outline:none;
+          color:white;
+          cursor:pointer;
+          transition:0.25px;
+          }
+
+   button:hover{
+                background-color:#5390F5;
+                }

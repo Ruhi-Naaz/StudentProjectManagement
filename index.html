@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="style2.css">
+	<title>Student Project Management</title>
+	<script>
+		var role='';
+		var username='';
+		function setRole(role1)
+		{
+			role=role1;
+			console.log(role);
+		}
+		function setUser(username1)
+		{
+			username=username1;
+			console.log(username);
+		}
+		function goToPage()
+		{
+			console.log(role);
+				if(role=="Project Team")
+				{
+					window.location= "\student_rp.html";
+				}
+				else if(role=="Project Head")
+				{
+					window.location= "\p_list.html";
+				}
+				else
+				{
+					window.alert("select role");
+				}
+		}
+	</script>
+	<style>
+		button{
+
+          background-color:#4e89ae;
+          display:block;
+          margin:20px 0px 0px 20px;
+          text-align:center;
+          border-radius:20px;
+          border:2px solid #41444b;
+          padding:10px 50px;
+          outline:none;
+          color:white;
+          cursor:pointer;
+          transition:0.25px;
+
+        }
+		button:hover{
+			background-color: #5390F5;
+			}
+	</style>
+</head>
+
+<body>
+	<div class="form1">
+
+	<h1>
+		<img src="./logo.jpg" alt="clg logo" style="width:50px;height:50px;" align="left">
+		 STUDENT PROJECT MANAGEMENT
+		<img src="./logo.jpg" alt="clg logo" style="width:50px;height:50px;" align="right">
+	</h1>
+	</div>
+
+	<div class="main">
+	<center>
+		<br>
+		<h2 class="name">Role:</h2>
+		<select class ="option" name="role" onchange="setRole(value)">
+		<option></option>
+		<option value="Project Head">Project Head</option>
+		<option value="Project Team">Project Team</option>
+		</select>
+		<h2 class="name">Username:</h2>
+		<input class="Code" type="text" name="name of student" onblur="setUser(value)">
+		<h2 class="name">Password:</h2>
+		<input class="Code" type="password">
+		<br><br>
+		<button onclick="goToPage()"name="submit" >Submit</button>
+	</center>
+	<div class="note">
+	<h2>Note:</h2>
+	<br/>
+
+<l>
+	<li>Form a team of 2-3 students</li>
+	<li>Each team mate should use the same login credentials</li>
+	<li>Each team should choose unique project and username</li>
+	<li>Each team should implement full stack web application of selected project</li>
+	<li>No request for change of project will be entertained later</li>
+</l>
+
+<br/>
+</div>
+</div>
+
+</body>
+</html>
