@@ -6,9 +6,16 @@
      <link rel="stylesheet" href="rform.css">
     <title>Project Details</title>
 	<script>
-		function goToPage()
+		function goToPage(btn)
 		{
-					window.location= "\student_submit.html";
+				if(btn=='submit')
+				{
+					window.location="\student_submit.html";
+				}
+				else if(btn=='Logout')
+				{
+					window.location="\spm_login.html";
+				}
 		}
 	</script>
 </head>
@@ -24,13 +31,16 @@
 
 <div class="main">
   <!-- <form method="POST"> -->
+	<span >
+				<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+	</span>
 	<br>
     <div id="name">
       <h2 class="name">Project Name: </h2>
       <input class="pname" type="text" name="pname"><br>
     </div>
 
-    <h2 class="name">Project Details: </h2>
+    <h2 class="name">Project Description: </h2>
     <textarea class="pdetails" rows="3" cols="30" name="details" id="details"></textarea>
 
     <h2 class="name">Teammate #1</h2>
@@ -57,7 +67,7 @@
             <input class="email1" type="text" name="email">
             <label class="email">Email ID</label>
 
-		<button onclick="goToPage()"name="submit" >Submit</button>
+		<button onclick="goToPage('submit')"name="submit" >Submit</button>
       
 	 <!--  </form> -->
     </div>

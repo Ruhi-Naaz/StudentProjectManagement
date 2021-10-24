@@ -21,21 +21,50 @@
          padding:80px;
          left:100px;
         }
-
+		.pull_right{
+				line-height: 20px;
+				font-size: 10pt;
+				background-color:#4e89ae;
+				border-radius:20px;
+			  	border:2px solid #41444b;
+				cursor:pointer;
+			  	transition:0.25px;
+				margin-top: 1px;
+				margin-right: 2px;
+				position:absolute;
+				top:0;
+				right:0;
+				outline:none;
+			    color:white;
+				display:block;
+				padding:5px 30px;
+				
+			 }
     </style>
 
     <meta charset="utf-8">
 
     <title>Approval Denied</title>
+	<script>
+			function goToPage(bttnClicked)
+			{
+				if(bttnClicked=='Logout')
+				{
+					window.location="\spm_login.html";
+				}
+			}
+		</script>
   </head>
   <body>
     <center>
       <div class="main">
+		<span >
+				<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+		</span>
 
-
-    <h1>Your project has not been approved.</h1>
-    <br/>
-    <h2>Contact the faculty concerned for further instructions.</h2>
+		<h1>Your project has not been approved.</h1>
+		<br/>
+		<h2>Contact the faculty concerned for further instructions.</h2>
     </div>
     </center>
 

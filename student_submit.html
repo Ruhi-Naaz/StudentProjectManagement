@@ -20,22 +20,51 @@
          margin:auto;
          padding:80px;
         }
+		.pull_right{
+				line-height: 20px;
+				font-size: 10pt;
+				background-color:#4e89ae;
+				border-radius:20px;
+			  	border:2px solid #41444b;
+				cursor:pointer;
+			  	transition:0.25px;
+				margin-top: 1px;
+				margin-right: 2px;
+				position:absolute;
+				top:0;
+				right:0;
+				outline:none;
+			    color:white;
+				display:block;
+				padding:5px 30px;
+				
+		}
 
     </style>
 
     <meta charset="utf-8">
 
     <title>Project Sent</title>
+	<script>
+			function goToPage(bttnClicked)
+			{
+					if(bttnClicked=='Logout')
+					{
+						window.location="\spm_login.html";
+					}
+			}
+	</script>
   </head>
   <body>
     <center>
-      <div class="main">
-
-
-    <h1>Project approval request sent successfully!</h1>
-    <br/>
-    <h2>Login again after receiving approval to begin updating progress or contact the faculty concerned.</h2>
-    </div>
+		<div class="main">
+			<span >
+						<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+			</span>
+			<h1>Project approval request sent successfully!</h1>
+			<br/>
+			<h2>Login again after receiving approval to begin updating progress or contact the faculty concerned.</h2>
+		</div>
     </center>
 
   </body>

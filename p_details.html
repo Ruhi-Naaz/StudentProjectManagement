@@ -42,8 +42,30 @@
         }
         .buttons:hover{
                      background-color:#5390F5;
-
-
+		}
+		.pull_right{
+				line-height: 20px;
+				font-size: 10pt;
+				background-color:#4e89ae;
+				border-radius:20px;
+			  	border:2px solid #41444b;
+				cursor:pointer;
+			  	transition:0.25px;
+				margin-top: 1px;
+				margin-right: 2px;
+				position:absolute;
+				top:0;
+				right:0;
+				outline:none;
+			    color:white;
+				display:block;
+				padding:5px 30px;
+				
+			 }
+		
+		th{
+			font-size:15pt;
+		}
     </style>
     <title></title>
 	<script>
@@ -57,16 +79,22 @@
 				{
 					window.alert('Project rejected succesfully');
 				}
+				else if(btn=='Logout')
+				{
+					window.location="\spm_login.html";
+				}
 		}
 	</script>
   </head>
   <body>
     <div class="main">
 
+		<span >
+				<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+			</span>
 
-
-		<h3>Project Title:</h3><p> Student Project Management System</p>
-		<h3>Project Description</h3>
+		<h2>Project Name:</h2><p> Student Project Management System</p>
+		<h2>Project Description</h2>
 		<p>This project is aimed at developing a web-
 		based system, which manages the activity of “Student Project
 		Management”. This system will manage the database and maintain a list of
@@ -78,18 +106,18 @@
 				<th>Email ID</th>
 			  </tr>
 			  <tr>
-				<td >Team Member1</td>
+				<td >Member1</td>
 				<td>001</td>
 				<td>abc1@gmail.com</td>
 			  </tr>
 			  <tr>
-				<td >Team Member2</td>
+				<td >Member2</td>
 				<td>002</td>
 				<td>abc2@gmail.com</td>
 
 			  </tr>
 			  <tr>
-				<td >Team Member3</td>
+				<td >Member3</td>
 				<td>003</td>
 				<td>abc3@gmail.com</td>
 			  </tr>

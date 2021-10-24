@@ -21,28 +21,60 @@
 			  background-image:url(https://www.wallpapertip.com/wmimgs/231-2314219_resolution-light-sky-blue-solid-color-background-view.jpg);
 
 			}
+			 .pull_right{
+				line-height: 20px;
+				font-size: 10pt;
+				background-color:#4e89ae;
+				border-radius:20px;
+			  	border:2px solid #41444b;
+				cursor:pointer;
+			  	transition:0.25px;
+				margin-top: 1px;
+				margin-right: 2px;
+				position:absolute;
+				top:0;
+				right:0;
+				outline:none;
+			    color:white;
+				display:block;
+				padding:5px 30px;
+				
+			 }
 		</style>
 		<script>
+			function goToPage(bttnClicked)
+			{
+					if(bttnClicked=='Logout')
+					{
+						window.location="\spm_login.html";
+					}
+			}
 			function ShowDiv(buttonClicked)
 			{
-			if(buttonClicked=='approval')
-			{
-			document.getElementById('ProjectApprovalList').classList.remove('hidden')
-			document.getElementById('ProjectApprovedList').classList.add('hidden');
-			}
-			else if(buttonClicked=='approved')
-			{
-			document.getElementById('ProjectApprovalList').classList.add('hidden');
-			document.getElementById('ProjectApprovedList').classList.remove('hidden');
-			}
-			}
+				if(buttonClicked=='approval')
+				{
+				document.getElementById('ProjectApprovalList').classList.remove('hidden')
+				document.getElementById('ProjectApprovedList').classList.add('hidden');
+				}
+				else if(buttonClicked=='approved')
+				{
+				document.getElementById('ProjectApprovalList').classList.add('hidden');
+				document.getElementById('ProjectApprovedList').classList.remove('hidden');
+				}
+			};
+			
 		</script>
 
 	</head>
 	<body>
 
 	<div class="container">
-		&nbsp;
+		
+		<div>
+			<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+		</div>
+			<br/>
+			<br/>
 		<div class="row">
 			<button class="btn-primary btn-lg col-xs-6" onclick="ShowDiv('approval')">Project Approval Requests</button>
 			<button class="btn-primary btn-lg col-xs-6" onclick="ShowDiv('approved')">Approved Project List</button>
@@ -128,7 +160,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><a href=".\p_details.html">Student Project Management System</a></td>
+						<td><a href=".\progress_view.html">Student Project Management System</a></td>
 						<td>Team Member1</td>
 						<td>Team Member2</td>
 						<td>Team Member3</td>

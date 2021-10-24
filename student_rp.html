@@ -13,11 +13,26 @@
 			 color: white;
 			 font-size:15px;
 			 }
-
-
-
+			 .pull_right{
+				line-height: 20px;
+				font-size: 10pt;
+				background-color:#4e89ae;
+				border-radius:20px;
+			  	border:2px solid #41444b;
+				cursor:pointer;
+			  	transition:0.25px;
+				margin-top: 1px;
+				margin-right: 2px;
+				position:absolute;
+				top:0;
+				right:0;
+				outline:none;
+			    color:white;
+				display:block;
+				padding:5px 30px;
+				
+			 }
 			.buttons{
-
 			  background-color:#4e89ae;
 			  display:block;
 			  margin:20px 0px 0px 20px;
@@ -29,12 +44,13 @@
 			  color:white;
 			  cursor:pointer;
 			  transition:0.25px;
-
 			}
 			.buttons:hover{
 						 background-color:#5390F5;
-
-
+			}
+			.pull_right:hover{
+						 background-color:#5390F5;
+			}
 		</style>
 
 		<meta charset="utf-8">
@@ -51,11 +67,18 @@
 				{
 					window.location="\progress.html";
 				}
+				else if(bttnClicked=='Logout')
+				{
+					window.location="\spm_login.html";
+				}
 			}
 		</script>
 	</head>
     <body>
 		<div class="main" >
+			<span >
+				<button class="pull_right" onclick="goToPage('Logout')">Logout</button>
+			</span>
 			<center>
 		   <!--  <form action="p_form.html" method="post"> -->
 		   <!--  <input class="buttons" type="submit" value = "Register Team"> -->
